@@ -1,0 +1,27 @@
+
+<div class="add-wrapper">
+  <a class="add" routerLink="/create">
+    Create +
+  </a>
+</div>
+
+<div class="container">
+  <div class="team-card" *ngFor="let team of teams">
+    
+    <a routerLink="/team/{{team.id}}" class="link">
+      <div class="card-header">
+        <img src={{team.logo}} alt="Club Logo">
+      </div>
+      <div class="card-body">
+        <h3>{{team.name}}</h3>
+      </div>
+    </a>
+    <div class="delete-wrapper">
+      <button type="button" class="delete" (click)="deleteTeam(team)">
+        Delete team
+      </button>
+    </div>
+
+  </div>  
+</div>
+

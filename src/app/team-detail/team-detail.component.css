@@ -1,0 +1,46 @@
+.team-details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.team-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.actionWrapper {
+  display: flex;
+  gap: 130px;
+  justify-content: center;
+}
+
+.edit, .back {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  border: 2px solid rgb(12, 92, 229);
+  border-radius: 5px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.edit:hover, 
+.back:hover {
+  opacity: 0.7;
+}

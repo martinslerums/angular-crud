@@ -1,0 +1,40 @@
+<form class="team-form">
+
+  <label for="team-logo">Team logo </label>
+  <input 
+    id="team-logo" 
+    #teamLogo 
+  />
+
+  <label for="team-name">Team name </label>
+  <input 
+    id="team-name"
+    #teamName 
+    
+  />
+
+  <label for="team-points">Points </label>
+  <input 
+    id="team-points"
+    #teamPoints 
+    type="number" 
+    
+  />
+  <div class="buttonWrapper">
+    <button type="button" class="add-button" 
+      (click)="addTeam(
+        {
+        name: teamName.value,
+        logo: teamLogo.value, 
+        points: teamPoints.value
+        }
+      ); 
+      teamName.value=''; 
+      teamLogo.value=''; 
+      teamPoints.value='';"
+    >
+      Add team
+    </button>
+  </div>
+
+</form>

@@ -1,0 +1,23 @@
+<form *ngIf="team" class="edit-form">
+
+  <img src="{{team.logo}}" width="350" alt="{{team.name}} logo">
+
+  <label for="team-name">Team name </label>
+  <input 
+    name="teamName"
+    [(ngModel)]="team.name"
+    id="team-name"
+  />
+
+  <label for="team-points">Points </label>
+  <input 
+    name="teamPoints"
+    [(ngModel)]="team.points"
+    id="team-points"
+  />
+  <div class="buttonWrapper">
+    <button type="button" (click)="goBack()" class="back-button">Back</button>
+    <button type="button" (click)="saveEdit()" class="save-button">Save</button>
+  </div>
+
+</form>
